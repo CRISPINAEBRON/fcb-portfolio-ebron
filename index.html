@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- para di magsisiksikan -->
+	<title> Crispina Ebron | Developer Portfolio</title>
+	<!-- google fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Roboto&display=swap" rel="stylesheet">
+	<!-- bootstrap css -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<!-- EXTERNAL CSS -->
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<!-- ctrl+shift+/ allows us to add comments. -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+		<!-- navbar-expand-lg : ilalatag nya ung mga link sa tabi ng header
+		kapag tinanggal to ung mga link mmawala sa helera 
+			sticky-top : para mg auto freeze ang nav
+
+			-->
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+		data-target="#portfolio-nav">
+		<!-- navbar toggler ito ung may tatlong line at drp down -->
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="portfolio-nav">
+		<!-- collapse = magtatago ng drop down links  -->
+			<ul class="navbar-nav mx-auto">
+				<!-- navbar-nav - pinagtatabi nya ung links mo -->
+				<!-- mx ay margin - auto center margin -->
+				<!-- ml ay margin - auto left margin -->
+				<!-- mr ay margin - auto right margin -->
+				<li>
+					<a class="nav-link" href="#landing"> Home </a>
+					<!-- #countsign hhnapin ung element na may #landing or ung section id na landing -->
+				</li>
+				<li>
+					<a class="nav-link" href="#gallery"> Gallery </a>
+					<!-- #countsign hhnapin ung element na may #gallery or ung section id na gallery -->
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- container -->
+	<div class="container-fluid">
+		<section id="landing" class="text-center jumbotron bg-transparent  mt-3">
+			<!-- to add style form bootstap, we add specific classes from bootstrap. 
+				
+				fluid- para di nay ma overlap ung ibang text at image sa screen
+				jumbotron = naging gray ung backgroud at prang naging tarpaulin
+				jumbotron bg-dark = chinage ung kulay
+				text-white = chinage ung kulay ng font ng section id
+				mt-3 = magadd ng margin
+			-->
+			<h1 > Crispina B. Ebron</h1>
+			<p > Hi ! My name is Phen and I love building this from scratch</p>
+
+				<img src="./images/PROFILE.JPEG" class="img-fluid">
+		</section>
+		<!-- end of landing -->
+		<section id="gallery" class="text-center bg bg-dark text-white">
+
+			<!-- div class to create our own clases and define its style using css // to put in one container-->
+			<div class="tools">
+				<h2> Languages I Speak</h2>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+					</ul> 
+			</div>
+			<div class="tools">
+				<h2>Tools I Use</h2>
+					<ul>
+						<li>Git Bash/Terminal</li>
+						<li>Sublime Text</li>
+						<li>Github</li>
+						<li>Google Chrome</li>
+					</ul>
+			</div>
+		
+		</section>
+		<!-- end of gallery -->
+	</div>
+
+	<!-- Bootstrap JS Dependencies -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+		
+	</script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>

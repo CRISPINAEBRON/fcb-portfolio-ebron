@@ -1,0 +1,90 @@
+/*
+
+Syntax:
+
+* (selector){
+	property:value;
+}
+
+
+IMPORTANT !!!
+
+ASTERISK * AY UNIVERSAL
+KPH CHOOSE MO NA UNG SPECIFIC SLA LNG UNG MAG CHCHANGE
+
+*/
+
+/*universal - all elements ng html mo*/
+* {
+	font-family:"Roboto", sans-serif;
+}
+
+/*type - specific tags*/
+h1,h2 {
+	font-family:"Montserrat", sans-serif;
+}
+
+img {
+	height: 250px;
+	width: 250px;
+
+}
+
+#landing {
+	/*vh - viewport height - base on the height
+	 of the web page and the device you are currently viewing
+	 the page in*/
+	height: 80vh;
+	/* display flex para manipulate ung elements
+	default neto ay naka row lahat ung LIST ITEMS #landing*/
+	display: flex;
+	/*flex directon : colum to change defaul into column
+	horizontally*/
+	flex-direction: column;
+	/*center all contents of an element with flx as 
+	vertically*/
+	align-items: center;
+	/*justify all contents of #landing*/
+	justify-content: center;
+
+
+}
+
+#gallery{
+
+	height: 75vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h2 {
+	/*hex decimal color*/
+	color: #007bff;
+}
+
+/*class selector - .classname*/
+
+.tools	{
+	/*solid - ito ung line ni tools*/
+	border: 5px solid #f2f2f2;
+	/*padding or ung distance ng text sa box*/
+	padding: 25px;
+	/*padding or ung distance ng lahat ng box sa loob ng container*/
+	margin: 20px;
+	height: 200px;
+	/*75 % gagawing auto 75 per percent ung mga container or 
+	ung div clas na  'tools' sa loob ng section ID Gallery*/
+	width: 75%;
+}	
+
+html	{
+	scroll-behavior: smooth;
+}
